@@ -117,8 +117,6 @@
   color: var(--color-black);
 }
 
-
-
 .title__one {
   font-size: 36px;
   font-weight: 700;
@@ -143,9 +141,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 .customer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center;
   border: 1px solid currentColor;
   color: #afb1b8;
   border-radius: 4px;
@@ -167,7 +163,6 @@
 .customer:focus svg {
   fill: var(--hover-color);
 }
-
 
 h3 {
   margin-top: -20px;
@@ -275,6 +270,10 @@ h3 {
   background-color: var(--color-white-dark);
 }
 
+.center {
+@include center;
+}
+
 .list {
   list-style: none;
   display: flex;
@@ -302,8 +301,3 @@ h3 {
   fill: var(--hover-color);
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
