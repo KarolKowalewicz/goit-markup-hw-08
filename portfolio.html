@@ -16,33 +16,50 @@
   </head>
 
   <body>
-    <header class="margin-bottom">
-      <div class="container header-wrapper">
+    <header class="header-line">
+      <!-- <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button> -->
+      <div class="container header__menu-wrapper">
         <nav>
-          <ul class="button-list">
-            <li class="list-menu">
+          <ul class="menu__nav-horizontal">
+            <li class="menu-item">
               <a href="#" class="logo-text-black"><span class="logo-text-blue">Web</span>Studio</a>
             </li>
-            <li class="list-menu">
+            <li class="menu-item">
               <a href="./index.html" class="navigation">Agencja</a>
             </li>
-            <li class="list-menu"><a href="./portfolio.html" class="active-link">Portfolio</a></li>
-            <li class="list-menu"><a href="#" class="navigation">Kontakt</a></li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-active-link">Portfolio</a>
+            </li>
+            <li class="menu-item"><a href="#" class="navigation">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="button-list">
-          <li class="list-menu envelope infolist">
-            <a href="mailto:info@devstudio.com" class="kontakt">
-              <svg  width="16" height="12">
+        <ul class="menu__nav-horizontal">
+          <li class="menu-item menu-envelope infolist">
+            <a href="mailto:info@devstudio.com" class="contact-item">
+              <svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="list-menu phone">
-            <a href="tel:+48111111111" class="kontakt infolist">
-              <svg  width="10" height="16">
+          <li class="menu-item menu-phone">
+            <a href="tel:+48111111111" class="contact-item infolist">
+              <svg width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -52,18 +69,19 @@
       </div>
     </header>
 
-    <main>
-      <section class="section">
-        <div class="container margin-button button-kategory">
+    <main class="container-new">
+      <section class="menu-row">
+        <div class="menu-row-center menu-row-center__button-kategory">
           <a href="#"><button type="button" class="button">Wszystkie</button></a>
           <a href="#"><button type="button" class="button">Strony</button></a>
           <a href="#"><button type="button" class="button">Aplikacje</button></a>
           <a href="#"><button type="button" class="button">Dizajn</button></a>
           <a href="#"><button type="button" class="button">Marketing</button></a>
         </div>
-
-        <div class="container portfolio-tabela">
-          <div class="portfolio-item">
+      </section>
+      <section>
+        <div class="container section-teams__portfolio-tabela">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -74,17 +92,17 @@
                 <img
                   src="./images/technocrack.jpg"
                   alt="foto - Technocrack - Strona internetowa"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Technocrack</h5>
+                <h5 class="section-teams__portfolio-space-info">Technocrack</h5>
                 <span class="kategory">Strona internetowa</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -95,17 +113,19 @@
                 <img
                   src="./images/golden_star.jpg"
                   alt="foto - Grafika New Orlen vs Golden Star - Dizajn"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Grafika New Orlen vs Golden Star</h5>
+                <h5 class="section-teams__portfolio-space-info">
+                  Grafika New Orlen vs Golden Star
+                </h5>
                 <span class="kategory">Dizajn</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -116,17 +136,17 @@
                 <img
                   src="./images/restaurant.jpg"
                   alt="foto - Restauracja Seafood Aplikacja"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Restauracja Seafood</h5>
+                <h5 class="section-teams__portfolio-space-info">Restauracja Seafood</h5>
                 <span class="kategory">Aplikacja</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -137,17 +157,17 @@
                 <img
                   src="./images/headphone.jpg"
                   alt="foto - Projekt Prime - Marketing"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Projekt Prime</h5>
+                <h5 class="section-teams__portfolio-space-info">Projekt Prime</h5>
                 <span class="kategory">Marketing</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -158,17 +178,17 @@
                 <img
                   src="./images/boxes.jpg"
                   alt="foto - Projekt Boxes - Aplikacja"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Projekt Boxes</h5>
+                <h5 class="section-teams__portfolio-space-info">Projekt Boxes</h5>
                 <span class="kategory">Aplikacja</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -176,16 +196,20 @@
                   koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
                   niezabezpieczone serwery konkurencji
                 </p>
-                <img src="./images/monitor.jpg" alt="John Doe" class="img-portfolio" />
+                <img
+                  src="./images/monitor.jpg"
+                  alt="John Doe"
+                  class="img-section-teams__portfolio"
+                />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Inspiration has Borders</h5>
+                <h5 class="section-teams__portfolio-space-info">Inspiration has Borders</h5>
                 <span class="kategory">Strona intenetowa</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -196,17 +220,17 @@
                 <img
                   src="./images/book.jpg"
                   alt="foto - Magazyn Limited Edition - Dizajn"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Magazyn Limited Edition</h5>
+                <h5 class="section-teams__portfolio-space-info">Magazyn Limited Edition</h5>
                 <span class="kategory">Dizajn</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -217,17 +241,17 @@
                 <img
                   src="./images/sticker.jpg"
                   alt="foto - Projekt LAB - Marketing"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Projekt LAB</h5>
+                <h5 class="section-teams__portfolio-space-info">Projekt LAB</h5>
                 <span class="kategory">Marketing</span>
               </div>
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <div class="section-teams__portfolio-item">
             <a href="#" class="project-link">
               <div class="project-active">
                 <p class="project-animation project-animaction-text">
@@ -238,11 +262,11 @@
                 <img
                   src="./images/business.jpg"
                   alt="foto - Growing Business - Aplikacja"
-                  class="img-portfolio"
+                  class="img-section-teams__portfolio"
                 />
               </div>
               <div class="project__border">
-                <h5 class="project-info">Growing Business</h5>
+                <h5 class="section-teams__portfolio-space-info">Growing Business</h5>
                 <span class="kategory">Aplikacja</span>
               </div>
             </a>
@@ -254,11 +278,18 @@
     <footer class="footer">
       <div class="container footer__display">
         <div>
-          <h3 class="logo-text-white"><span class="logo-text-blue">Web</span>Studio</h3>
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-          <a href="mailto:info@example.com" class="kontakt">info@example.com</a>
-          <br />
-          <a href="tel:+48111111111" class="kontakt">+48 111 111 111</a>
+          <ul>
+            <li>
+              <h3 class="logo-text-white"><span class="logo-text-blue">Web</span>Studio</h3>
+            </li>
+            <li class="footer__address"><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
+            <li class="footer__address">
+              <a href="mailto:info@example.com" class="contact-item">info@example.com</a>
+            </li>
+            <li class="footer__address">
+              <a href="tel:+48111111111" class="contact-item">+48 111 111 111</a>
+            </li>
+          </ul>
         </div>
         <div>
           <div class="footer__display__social">
@@ -318,5 +349,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
