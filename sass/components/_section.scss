@@ -4,7 +4,7 @@
   margin: auto;
 }
 
-.newsletter-tittle {
+.newsletter-form__tittle {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
@@ -12,7 +12,7 @@
   color: var(--color-white-dark);
 }
 
-.newsletter-holder {
+.newsletter-form__holder {
   width: 358px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -25,7 +25,7 @@
   outline: none;
 }
 
-.newsletter-button-join {
+.footer__button {
   position: relative;
   background-color: var(--hover-color);
   border-radius: 4px;
@@ -45,16 +45,16 @@
   outline: none;
 }
 
-.newsletter-button-join:hover,
-.newsletter-button-join:focus {
+.footer__button:hover,
+.footer__button:focus {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-icon .footer-joinus-link svg {
+.newsletter-form__icon .footer-joinus-link svg {
   fill: var(--hover-color);
 }
 
-.newsletter-svg-position {
+.footer__newsletter {
   position: absolute;
   transform: translateY(-50%);
   right: 20px;

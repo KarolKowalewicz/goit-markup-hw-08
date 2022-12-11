@@ -1,34 +1,27 @@
-.header__menu-wrapper {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 32px;
 }
+
 .header-line {
   border-bottom: 2px solid #ececec;
 }
 
-//  pewno lepiej byłoby połączyć a nie oddzielnie margin
-// .header {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding-block: 32px;
-//   border-bottom: 1px solid #ececec;
+
+
+// .client-box-size {
+//   border: 1px solid var(--color-grey-light);
+//   border-radius: 4px;
+//   width: 170px;
+//   height: 92px;
+//   color: var(--color-grey-light);
 // }
 
-
-.client-box-size {
-  border: 1px solid var(--color-grey-light);
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  color: var(--color-grey-light);
-}
-
-.client-box-size:hover {
-  border-color: var(--hover-color);
-}
+// .client-box-size:hover {
+//   border-color: var(--hover-color);
+// }
 
 .margin-agencja {
   padding: 32px;

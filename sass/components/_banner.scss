@@ -8,7 +8,7 @@
   text-align: center;
   color: var(--color-white);
   background: var(--main-image-linear-gradient);
-  background-image: url(../../images/banner-agencja.jpg);
+  background-image: url(../images/banner-agencja.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -22,12 +22,4 @@
   font-size: 46px;
   line-height: 1.6;
   padding-top: 200px;
-}
-
-.section-teams {
-  background-color: var(--color-white-dark);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--color-white);
 }
