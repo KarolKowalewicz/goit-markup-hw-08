@@ -6,8 +6,9 @@
   color: var(--color-white);
 }
 .our-teams__portfolio {
+  display: flex;
   list-style: none;
-  display: inline-flex;
+  flex-wrap: wrap;
   padding-bottom: 94px;
 }
 
@@ -193,8 +194,6 @@ h3 {
   border-color: var(--hover-color);
 }
 
-
-
 .our-customers__icon {
   display: flex;
   width: 106px;
@@ -206,16 +205,24 @@ h3 {
   fill: var(--hover-color);
 }
 
-
 .container {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    // justify-content: center;
+    // margin: 0 auto;
+    // width: 100%;
+    max-width: 1200px;
+  }
+}
 
 .section-work {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 44px;
@@ -297,9 +304,9 @@ h3 {
   margin: 0 auto;
 }
 
-// tescik 
+// tescik
 .contact__list {
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
 }
