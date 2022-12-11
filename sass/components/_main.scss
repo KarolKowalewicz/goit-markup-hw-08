@@ -214,40 +214,29 @@ h3 {
   fill: var(--hover-color);
 }
 
-// moje staare
-// .container {
-//   justify-content: center;
-//   margin: 0 auto;
-//   // width: 100%;
-//   // max-width: 1200px;
-// }
 
 .container {
-  width: 100%;
-  padding: 0 15px;
+  width: 100vh;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
+
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
+  // .container {
+  //   width: 768px;
+  // }
 }
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+  // .container {
+  //   width: 1200px;
+  // }
 }
 
 .container-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   justify-items: center;
   flex-wrap: wrap;
+  padding-right: 10px;
 }
 
 .section-work {
@@ -309,9 +298,9 @@ h3 {
   justify-content: center;
   color: var(--color-grey-light);
   background-color: var(--color-white-dark);
-  border: 2px solid var(--color-white-dark);
+  // border: 2px solid var(--color-white-dark);
   border-radius: 4px;
-  width: 470px;
+  max-width: 470px;
 
 }
 .globaltech__box {
