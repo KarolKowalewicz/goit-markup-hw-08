@@ -1,28 +1,7 @@
 .is-hidden {
-  pointer-events: none;
-  visibility: hidden;
   opacity: 0;
-  z-index: 1;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
-}
-
-
-
-//  dopisane dziś
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-// dopisane dziś
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    transition: cubic-bezier(.05, .79, .83, .67) 500ms;
-}
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-100%);
+} 
 

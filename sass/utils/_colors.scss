@@ -1,9 +1,20 @@
 :root {
-  --color-black: #212121;
-  --color-white: #ffffff;
-  --color-white-dark: #f5f4fa;
-  --color-grey-light: #afb1b8;
-  --color-grey: #757575;
-  --hover-color: #2196f3;
-  --background-color: #e5e5e5;
+  --primary-color: #2196f3;
+  --secondary-color: #212121;
+  --social-footer-color: rgba(255, 255, 255, 0.1);
+  --clients-color: #afb1b8;
+  --white-color: #fff;
+  --contacts-list-color: #757575;
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1200px;
+}
+.logo__blue {
+  color: var(--primary-color);
+}
+.logo__white {
+  color: #fff;
+}
+.logo__black {
+  color: #000;
 }
